@@ -1,5 +1,5 @@
 from sklearn.metrics import f1_score
-from train_model import 
+from train_model import tune_hyperparameter
 
 def evaluate_model(X_train, y_train, X_val, y_val, classifier, best_params):
   tuned_model = classifier(**best_params)
